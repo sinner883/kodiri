@@ -14,25 +14,43 @@ function App() {
       <h1>This is my movie library</h1>
       <div className='container'>
         <div className='item'>
-          <img src={matrix1} alt='movie-picture' />
+          <img src={matrix1} alt='movie' />
+          <div>
+            <h1 className='overlay'>Matrix1</h1>
+          </div>
         </div>
         <div className='item'>
-          <img src={matrix2} alt='movie-picture' />
+          <img src={matrix2} alt='movie' />
+          <div>
+            <h1 className='overlay'>Matrix2</h1>
+          </div>
         </div>
         <div className='item'>
-          <img src={matrix3} alt='movie-picture' />
+          <img src={matrix3} alt='movie' />
+          <div>
+            <h1 className='overlay'>Matrix3</h1>
+          </div>
         </div>
       </div >
 
       <div className='container'>
         <div className='item'>
-          <img src={peaky} alt='movie-picture' />
+          <img src={peaky} alt='movie' />
+          <div>
+            <h1 className='overlay'>Peaky</h1>
+          </div>
         </div>
         <div className='item'>
-          <img src={endgame} alt='movie-picture' />
+          <img src={endgame} alt='movie' />
+          <div>
+            <h1 className='overlay'>Endgame</h1>
+          </div>
         </div>
         <div className='item'>
-          <img src={twotowers} alt='movie-picture' />
+          <img src={twotowers} alt='movie' />
+          <div>
+            <h1 className='overlay'>TwoTowers</h1>
+          </div>
         </div>
       </div>
     </div>
