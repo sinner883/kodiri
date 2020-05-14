@@ -14,6 +14,7 @@ img {
   flex: 1;
   position: relative;
   overflow: hidden;
+  margin-bottom: -3px;    /* to remove the gap in the middle of pitcs */
 }
 
 

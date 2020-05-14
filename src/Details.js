@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 export default function Details() {
     return (
         <div>
-            <h1>This page is in progress!</h1>
+            <h3>This page is in progress!</h3>
             <Link to='/'>Go back!</Link>
         </div>
     )
