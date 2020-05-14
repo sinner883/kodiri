@@ -7,8 +7,6 @@ import war from './img/war.jpg';
 import prodigy from './img/prodigy.jpg';
 import glass from './img/glass.jpg';
 
-
-
 export default function MovieApp() {
     return (
         <div>
