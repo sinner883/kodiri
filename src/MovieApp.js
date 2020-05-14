@@ -14,14 +14,14 @@ export default function MovieApp() {
         <div>
             <h1>My Library</h1>
             <div className='container'>
-                <Stack name='The Matrix' logo={matrix1} />
-                <Stack name='The Matrix: Reloaded' logo={matrix2} />
-                <Stack name='The Matrix: Revolutions' logo={matrix3} />
+                <Stack id='matrix' name='The Matrix' logo={matrix1} />
+                <Stack id='matrix2' name='The Matrix: Reloaded' logo={matrix2} />
+                <Stack id='matrix3' name='The Matrix: Revolutions' logo={matrix3} />
             </div>
             <div className='container'>
-                <Stack name='War' logo={war} />
-                <Stack name='Prodigy' logo={prodigy} />
-                <Stack name='Glass' logo={glass} />
+                <Stack id='war' name='War' logo={war} />
+                <Stack id='prodigy' name='Prodigy' logo={prodigy} />
+                <Stack id='glass' name='Glass' logo={glass} />
             </div>
         </div>
 
