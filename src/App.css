@@ -1,17 +1,13 @@
 .App {
   text-align: center;
-  padding: 0 auto;
-}
-
-img {
-  width: 100%;
 }
 
 .container{
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat( auto-fit, minmax(400px, 1fr) );
 }
+
 .item{
-  flex: 1;
   position: relative;
   overflow: hidden;
   margin-bottom: -3px;    /* to remove the gap in the middle of pitcs */
@@ -31,11 +27,4 @@ img {
 .item:hover .overlay{
   opacity: 0.6;
   bottom: 0;
-}
-
-@media only screen and (max-width: 700px) {
-
-  .container{
-    display: block;
-  }
 }
