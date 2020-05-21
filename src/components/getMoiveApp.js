@@ -12,6 +12,6 @@ export default function getMovieApp() {
         {id: 'matrix3', name: 'The Matrix: Revolutions', logo: matrix3 },
         {id: 'war', name: 'War', logo: war },
         {id: 'prodigy', name: 'The Prodigy', logo: prodigy },
-        {id: 'glass', name: 'Glass', logo: glass }
+        {id: 'glass', name: 'Glass', logo: glass },
     ];
 }
