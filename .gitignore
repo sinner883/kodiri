@@ -2,6 +2,7 @@
 
 # dependencies
 /node_modules
+/testing
 /.pnp
 .pnp.js
 
@@ -24,4 +25,4 @@ yarn-error.log*
 
 # my settings
 mymovie.code-workspace
-/testing
+
