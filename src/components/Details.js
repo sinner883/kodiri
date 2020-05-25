@@ -1,32 +1,38 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, Redirect } from 'react-router-dom';
+import getMovie from './getMovieApp';
 
 export default class Details extends Component {
 
     constructor() {
         super();
-        this.state ={
-            welcomeMessage: 'This page is in progress! Stay tuned!'
+        this.state = {
+            movie: {}
         };
     }
 
     componentDidMount() {
-        setTimeout(() => {
-            this.setState({
-                welcomeMessage: 'The best is yet to come!'
-            })
-           
-        }, 3000);
+        let movieId = this.props.match.params.movieId;
+        let movie = getMovie().find(function (movie) {
+            return movie.id === movieId;
+        });
+        this.setState({
+            movie: movie
+        })
     }
+
+    render() {
+        if (this.state.movie === undefined){
+            return <Redirect to = '/notFound' />;
+        } else {
+            return (
+                <div>
+                    <h3>{this.state.movie.name}</h3>
+                    <Link to='/'>Go back!</Link>
+                </div>
+            )
+        }
         
-    render(){
-        return (
-            <div>
-                <h3>{this.state.welcomeMessage}</h3>
-                <Link to='/'>Go back!</Link>
-            </div>
-        )
     }
 }
-
 // 1. introducing the component state
