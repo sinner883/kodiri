@@ -1,20 +1,28 @@
-// let myArray = [ 'index0', 'index1', 'index3', 'index4', 'index5' ];  //myArray[myArray.length -1];
+let myArray = [ 'index0', 'index1', 'index3', 'index4', 'index5' ];  //myArray[myArray.length -1];
 
-// let myFunction = (function(item, index){
-//     console.log(index, ' this is foreach iteration', item);
-// });
+let myFunction = ((item, index) => {
+    console.log(index, ' this is foreach iteration', item);
+    return item + 'R';
+});
 // myArray.forEach(myFunction);
+let result = myArray.map(myFunction);
+console.log(result);
 
-
-
-function myForEach(array, fn){
-    for (let i = 0; i < array.length; i-=1 ){
-        fn(array[i],i,array);
+function myForEach(array, nefunc){
+    let massive = [];
+    for (let i = 0; i < array.length; i++ ){
+         let o = nefunc(array[i],i,array);
+         massive.push(o);
     }
+    return massive;
 }
-myForEach([], );
-// myForEach(myArray, myFunction);
-// myForEach([1, 2, 3], myFunction);
+let resultMap = myForEach(myArray, myFunction);
+// myForEach([], );
+console.log(resultMap);
+
+
+myForEach(myArray, myFunction);
+myForEach([1, 2, 3], myFunction);
 
 
 
@@ -28,3 +36,8 @@ myForEach([], );
 // }
 // Array.prototype.forEach = forMax;
 // myArray.forEach(myFunction);
+
+
+
+
+

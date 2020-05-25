@@ -1,6 +1,6 @@
 import React from 'react';
 import Stack from './Stack.js';
-import getMovieApp from './getMoiveApp';
+import getMovieApp from './getMovieApp';
 
 export default function MovieApp() {
     return (
