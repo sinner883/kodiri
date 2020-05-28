@@ -28,6 +28,10 @@ export default class Details extends Component {
             return (
                 <div>
                     <h3>{this.state.movie.name}</h3>
+                    <div>{this.state.movie.syponsis}</div>
+                    <img 
+                        src={this.state.movie.logo} 
+                        alt={this.state.movie.name} />
                     <Link to='/'>Go back!</Link>
                 </div>
             )
