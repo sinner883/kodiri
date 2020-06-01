@@ -2,5 +2,5 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 Kodflix
 
-Project using React library created by Max Botez
+Using React library created by Max Botez
 indroducing pull request
