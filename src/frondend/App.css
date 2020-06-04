@@ -1,0 +1,30 @@
+.App {
+  text-align: center;
+}
+
+.container{
+  display: grid;
+  grid-template-columns: repeat( auto-fit, minmax(400px, 1fr));
+}
+
+.item{
+  position: relative;
+  overflow: hidden;
+  margin-bottom: -3px;    /* to remove the gap in the middle of pitcs */
+}
+
+
+.overlay{
+  transition: bottom ease 1s;
+  position: absolute;
+  bottom: -100px;
+  background-color: yellow;
+  left: 0;
+  opacity: 0.6;
+  width: 100%;
+}
+
+.item:hover .overlay{
+  opacity: 0.6;
+  bottom: 0;
+}
